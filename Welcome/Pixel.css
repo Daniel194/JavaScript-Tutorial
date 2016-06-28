@@ -1,0 +1,152 @@
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    background-color: #F4F4F2;
+    color: #30302F;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    margin-top: 72px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 50px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus {
+    color: #f1f1f1;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1253A4;
+}
+
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+ul.topnav li a:hover {
+    background-color: #111;
+}
+
+ul.topnav li.icon {
+    display: none;
+}
+
+@media screen and (max-width: 680px) {
+    ul.topnav li.user-name {
+        display: none;
+    }
+
+    ul.topnav li.icon {
+        float: right;
+        display: inline-block;
+    }
+}
+
+#logo img {
+    width: 50px;
+    padding: 10px;
+    margin-left: 50px;
+}
+
+#logo span {
+    float: right;
+    font-size: 30px;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+
+#logo {
+    background-color: white;
+    width: 250px;
+}
+
+.logout:hover {
+    background-color: #F04D48;
+    color: white;
+}
+
+.logout {
+    background-color: white;
+    color: #F04D48;
+}
+
+.circle {
+    background-color: white;
+    border: 3px solid #FFFFFF;
+    height: 60px;
+    width: 60px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 35px;
+    margin-top: 3px;
+    float: right;
+}
+
+ul.topnav .user {
+    float: right;
+    margin-right: 30px;
+}
+
+ul.topnav .user img {
+    height: 60px;
+}
+
+ul.topnav .user-name {
+    float: right;
+    font-size: 25px;
+    margin-top: 20px;
+    color: white;
+    margin-right: 10px;
+}
+
+#mySidenav {
+    width: 250px;
+}
+
+#main {
+    margin-left: 250px;
+}
