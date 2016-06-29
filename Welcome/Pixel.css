@@ -276,12 +276,12 @@ ul.topnav .user-name {
     color: #5cb85c;
 }
 
-.home{
+.home {
     background-color: white;
     color: #1253A4;
 }
 
-.home:hover{
+.home:hover {
     background-color: #1253A4;
     color: white;
 }
@@ -352,7 +352,20 @@ ul.topnav .user-name {
     background-color: #F4F4F2;
 }
 
-.add{
+.add {
     width: 150px;
     margin: 5px;
+}
+
+input[type=text] {
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('image/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 100px;
 }
