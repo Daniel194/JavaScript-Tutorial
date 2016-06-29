@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" type="text/css" href="Pixel.css">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="Pixel.css">
+</head>
 <body>
 
 <ul class="topnav">
@@ -18,10 +22,57 @@
 </div>
 
 <div id="main">
-    <h2>PIXEL</h2>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="myImg" src="image/img_fjords.jpg" alt="Trolltunga, Norway">
+                    <div class="content">
+                        <h4><b>Trolltunga, Norway</b></h4>
+                        <p>01/01/2009</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="myImg" src="image/off.png" alt="Description">
+                    <div class="content">
+                        <h4><b>Description</b></h4>
+                        <p>10/01/2009</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="myImg" src="image/user.png" alt="Description Picture">
+                    <div class="content">
+                        <h4><b>Description Picture</b></h4>
+                        <p>10/10/2009</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="myImg" src="image/on.png" alt="Description Picture">
+                    <div class="content">
+                        <h4><b>Description Picture 123</b></h4>
+                        <p>10/10/2010</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <span id="close">&#10006;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="../bootstrap.min.js"></script>
 <script src="Pixel.js"></script>
 </body>
 </html>

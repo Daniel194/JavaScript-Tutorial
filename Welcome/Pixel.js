@@ -11,3 +11,16 @@ $('#logo').click(function () {
         $('#logo img').attr('src', 'image/on.png');
     }
 });
+
+
+$('.myImg').click(function () {
+    $('#myModal').css('display', 'block');
+    $('#img01').attr('src', this.src);
+    $('#img01').attr('alt', this.alt);
+    $('#caption').html(this.alt);
+});
+
+
+$('#close').click(function () {
+    $('#myModal').css('display', 'none');
+});
