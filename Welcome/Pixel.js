@@ -14,13 +14,23 @@ $('#logo').click(function () {
 
 
 $('.myImg').click(function () {
-    $('#myModal').css('display', 'block');
+    $('#pictureModal').css('display', 'block');
     $('#img01').attr('src', this.src);
     $('#img01').attr('alt', this.alt);
     $('#caption').html(this.alt);
 });
 
 
-$('#close').click(function () {
-    $('#myModal').css('display', 'none');
+$('#closePicture').click(function () {
+    $('#pictureModal').css('display', 'none');
+});
+
+
+$('.add-picture').click(function () {
+    $('#addPictureModal').css('display', 'block');
+});
+
+
+$('#closeAdd').click(function () {
+    $('#addPictureModal').css('display', 'none');
 });

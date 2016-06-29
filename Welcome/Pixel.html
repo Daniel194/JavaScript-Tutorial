@@ -18,6 +18,8 @@
 </ul>
 
 <div id="mySidenav" class="sidenav">
+    <a href="#" class="home">Home</a>
+    <a href="#" class="add-picture">Add Picture</a>
     <a href="#" class="logout">Logout</a>
 </div>
 
@@ -64,11 +66,36 @@
     </div>
 </div>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
-    <span id="close">&#10006;</span>
+<!-- The Modal For Picture -->
+<div id="pictureModal" class="modal">
+    <span id="closePicture" class="close-modal">&#10006;</span>
     <img class="modal-content" id="img01">
     <div id="caption"></div>
+</div>
+
+<!-- The Modal For Add a Picture -->
+<div id="addPictureModal" class="modal">
+    <div class="modal-content-add">
+        <div class="modal-header">
+            <span id="closeAdd" class="close-modal-add">&#10006;</span>
+            <h2>Add New Picture</h2>
+        </div>
+        <div class="modal-body">
+            <form role="form">
+                <div class="form-group">
+                    <label for="inputdefault">Picture</label>
+                    <input class="form-control" id="inputdefault" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="inputdefault">Description</label>
+                    <input class="form-control" id="inputlg" type="text">
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-success add">Add</button>
+        </div>
+    </div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
