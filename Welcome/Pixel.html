@@ -11,7 +11,7 @@
     <li id="logo"><img src="image/on.png"> <span>PIXEL</span></li>
     <li id="search">
         <form>
-            <input type="text" name="search" placeholder="Search..">
+            <input type="text" name="search" class="search" placeholder="Search...">
         </form>
     </li>
     <li class="user">
@@ -81,25 +81,25 @@
 <!-- The Modal For Add a Picture -->
 <div id="addPictureModal" class="modal">
     <div class="modal-content-add">
-        <div class="modal-header">
-            <span id="closeAdd" class="close-modal-add">&#10006;</span>
-            <h2>Add New Picture</h2>
-        </div>
-        <div class="modal-body">
-            <form role="form">
+        <form method="POST" enctype="multipart/form-data" action="/">
+            <div class="modal-header">
+                <span id="closeAdd" class="close-modal-add">&#10006;</span>
+                <h2>Add New Picture</h2>
+            </div>
+            <div class="modal-body">
                 <div class="form-group">
                     <label for="inputdefault">Picture</label>
-                    <input class="form-control" id="inputdefault" type="text">
+                    <input class="form-control" id="inputdefault" type="file" name="file"/>
                 </div>
                 <div class="form-group">
                     <label for="inputdefault">Description</label>
                     <input class="form-control" id="inputlg" type="text">
                 </div>
-            </form>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-success add">Add</button>
-        </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success add">Add</button>
+            </div>
+        </form>
     </div>
 </div>
 

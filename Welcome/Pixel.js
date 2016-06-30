@@ -34,3 +34,8 @@ $('.add-picture').click(function () {
 $('#closeAdd').click(function () {
     $('#addPictureModal').css('display', 'none');
 });
+
+
+$('.add').click(function () {
+    $('#addPictureModal').css('display', 'none');
+});
