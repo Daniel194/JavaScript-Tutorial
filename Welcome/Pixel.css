@@ -369,3 +369,14 @@ ul.topnav .user-name {
     margin-top: 10px;
     margin-left: 100px;
 }
+
+.face {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.face:hover {
+    border: 3px solid #1253A4;
+    border-radius: 5px;
+}
