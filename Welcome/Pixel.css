@@ -380,3 +380,16 @@ ul.topnav .user-name {
     border: 3px solid #1253A4;
     border-radius: 5px;
 }
+
+.btn-delete {
+    float: right;
+    margin-top: -50px;
+    color: #F04D48;
+    background-color: #FFFFFF;
+    border: none;
+}
+
+.btn-delete:hover {
+    background-color: #F04D48;
+    color: #FFFFFF;
+}
