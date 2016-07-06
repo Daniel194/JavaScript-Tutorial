@@ -73,3 +73,7 @@ $('#closeAdd').click(function () {
 $('.add').click(function () {
     $('#addPictureModal').css('display', 'none');
 });
+
+$('.btn-delete').click(function(){
+  $(this).closest('.col-sm-4').remove();
+});
