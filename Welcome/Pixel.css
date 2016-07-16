@@ -393,3 +393,12 @@ ul.topnav .user-name {
     background-color: #F04D48;
     color: #FFFFFF;
 }
+
+.language {
+    display: inline-flex;
+}
+
+.language img {
+    height: 30px;
+    width: 50px;
+}

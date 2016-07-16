@@ -73,3 +73,7 @@ $('#closeAdd').click(function () {
 $('.add').click(function () {
     $('#addPictureModal').css('display', 'none');
 });
+
+$(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+});
