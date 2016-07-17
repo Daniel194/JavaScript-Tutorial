@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Pixel</title>
+    <link rel="stylesheet" type="text/css" href="../bootstrap.min.css">
+    <link href="Login.css" rel="stylesheet">
+
+</head>
+
+<body>
+Language : <a href="?language=en">English</a>|<a href="?language=ro">Romania</a>
+<div class="container">
+
+    <div class="alert alert-success">Message</div>
+
+    <form method="POST" class="form-signin">
+        <h2 class="form-heading">Login</h2>
+
+        <div class="form-group has-error">
+            <input name="username" type="text" class="form-control"
+                   placeholder="Username"
+                   autofocus="true"/>
+            <input name="password" type="password" class="form-control"
+                   placeholder="Password"/>
+            <span>Error</span>
+
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+            <h4 class="text-center"><a href="#">Create Account</a></h4>
+        </div>
+
+    </form>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="../bootstrap.min.js"></script>
+</body>
+</html>
