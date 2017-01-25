@@ -12,7 +12,14 @@ import {Hero} from "./hero";
           {{ hero.name }}
         </li>
       </ul>
-      <p *ngIf="heroes.length > 3">There are many heroes!</p>`
+      <p *ngIf="heroes.length > 3">There are many heroes!</p>
+      <br>
+      <click-me></click-me>
+      <br>
+      <little-tour></little-tour>
+      <br>
+      <loop-back></loop-back>
+`
 })
 
 export class AppComponent {
