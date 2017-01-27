@@ -19,16 +19,20 @@ import {Hero} from "./hero";
       <little-tour></little-tour>
       <br>
       <loop-back></loop-back>
+      <br>
+      <br>
+      <br>
+      <hero-form></hero-form>
 `
 })
 
 export class AppComponent {
     title = 'Tour of Heroes';
     heroes = [
-        new Hero(1, 'Windstorm'),
-        new Hero(13, 'Bombasto'),
-        new Hero(15, 'Magneta'),
-        new Hero(20, 'Tornado')
+        new Hero(1, 'Windstorm', ''),
+        new Hero(13, 'Bombasto', ''),
+        new Hero(15, 'Magneta', ''),
+        new Hero(20, 'Tornado', '')
     ];
     myHero = this.heroes[0];
 }
