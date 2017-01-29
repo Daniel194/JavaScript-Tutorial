@@ -4,7 +4,7 @@ import {ActivatedRoute, Params} from '@angular/router';
 import {Location}               from '@angular/common';
 
 import {Hero}         from '../hero';
-import {HeroService}  from '../hero.service';
+import {HeroService}  from '../service/hero.service';
 
 @Component({
     moduleId: module.id,
@@ -28,5 +28,10 @@ export class HeroDetailComponent implements OnInit {
 
     goBack(): void {
         this.location.back();
+    }
+
+    save(): void {
+        this.heroService.update(this.hero)
+            .then(() => this.goBack());
     }
 }
